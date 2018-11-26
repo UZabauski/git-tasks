@@ -1,4 +1,4 @@
-# git-tasks KKalesnikava, ASkorkin
+# git-tasks ASkorkin, KKalesnikava
 ![](image.png)
 
 Clone repository and create branch:
@@ -46,3 +46,5 @@ git push origin project/kkalesnikava-askorkin
 4. [PULL] When created jenkins.sh, done some changes, and other 
 
 git pull origin project/kkalesnikava-askorkin
+
+5. [REBASE] git rebase project/kkalesnikava-askorkin feature1_kkalesnikava
