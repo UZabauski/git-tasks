@@ -10,6 +10,7 @@ sudo useradd jenkins -d /opt/jenkins
 sudo chown jenkins:jenkins /opt/jenkins
 cd /opt/jenkins
 sudo wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war
+#create systemd for jenkins
 cd /etc/systemd/system/
 sudo touch jenkins.service
 printf "[Unit]\n" | sudo tee /etc/systemd/system/jenkins.service
