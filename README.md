@@ -2,7 +2,7 @@
 ###			BY IKazlouski & YRayetskaya
 
 
-##1. Configuring Merge
+## 1. Configuring Merge
 
 '''shell
 git checkout feature/merge project/ikazlouski-yrayetskaya
@@ -15,8 +15,8 @@ git push origin project/ikazlouski-yrayetskaya
 '''
 
 ***
-##3. Configuring Rebase
-'''shell
+## 3. Configuring Rebase
+'''python
 git checkout project/ikazlouski-yrayetskaya
 git rebase featRebase3
 git commit -m ""
@@ -24,12 +24,12 @@ git push origin project/ikazlouski-yrayetskaya
 '''
 
 ***
-##4. Force push
-'''shell
+## 4. Force push
+'''python
 git push --force  project/ikazlouski-yrayetskaya 
 '''
 ***
-##5. Tagging        
+## 5. Tagging        
 '''shell
 vim provision    #changing file
 git add provision.sh 
