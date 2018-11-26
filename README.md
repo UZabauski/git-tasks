@@ -1,4 +1,5 @@
 # git-tasks KKalesnikava, ASkorkin
+![](image.png)
 
 Clone repository and create branch:
 1.git clone https://github.com/MNT-Lab/git-tasks.git
