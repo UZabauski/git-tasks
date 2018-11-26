@@ -16,7 +16,6 @@ sudo mkdir $JENKINS_HOME
 sudo mkdir $JENKINS_DIR
 cd $JENKINS_DIR
 
-echo "directory for jenkins has been just created"
 
 
 sudo wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war
