@@ -1,4 +1,5 @@
 #!/bin/bash
+#MODIFIED SCRIPT BY IKAZLOUSKI
 JENKINS_HOME=/opt/jenkins/master
 JENKINS_DIR=/opt/jenkins/bin   #(<- .war here)
 sudo yum install -y epel-release 
