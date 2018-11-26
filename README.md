@@ -1,4 +1,4 @@
 # git-tasks
-# Our tree
+# Our tree:
 
 ![](Image.png)
