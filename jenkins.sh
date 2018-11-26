@@ -13,3 +13,11 @@ sudo chown -R jenkins:jenkins /opt/jenkins
 
 #Systemd  File
 sudo touch /etc/systemd/system/jenkins.service
+echo "[Unit]" | sudo tee -a /usr/lib/systemd/system/jenkins.service
+echo "Description=Jenkins Daemon" | sudo tee -a /usr/lib/systemd/system/jenkins.service
+echo "[Service]" | sudo tee -a /usr/lib/systemd/system/jenkins.service
+echo "ExecStart=/usr/bin/java -jar /home/jenkins/jenkins.war" | sudo tee -a /usr/lib/systemd/system/jenkins.service
+echo "User=jenkins" | sudo tee -a /usr/lib/systemd/system/jenkins.service
+echo "[Install]" | sudo tee -a /usr/lib/systemd/system/jenkins.service
+echo "WantedBy=multi-user.target" | sudo tee -a /usr/lib/systemd/system/jenkins.service
+sudo sed -i '/^[^#].*location \/ {/a  proxy_pass    http://192.168.10.10:8080;' /etc/nginx/nginx.conf
