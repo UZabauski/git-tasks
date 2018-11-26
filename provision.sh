@@ -15,8 +15,5 @@ sudo mkdir /opt/jenkins
 sudo mkdir $JENKINS_HOME
 sudo mkdir $JENKINS_DIR
 cd $JENKINS_DIR
-
-
-
 sudo wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war
 
