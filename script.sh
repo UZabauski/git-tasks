@@ -1,5 +1,7 @@
 #install nginx and java
 sudo yum install java nginx -y
+sudo sed -i "/^[^#].*server {/i $(printf '%.0s\ ' {0..3})upstream jenkins {\n\tserver 127.0.0.1:8080;\n    }" /etc/nginx/nginx.conf
+sudo sed -i '/^[^#].*location \//a \\tproxy_pass http://jenkins;' /etc/nginx/nginx.conf
 echo "export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-0.el7_5.x86_64/" | sudo tee -a ~/.bash_profile
 echo "export JRE_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-0.el7_5.x86_64/jre" | sudo tee -a ~/.bash_profile
 source ~/.bashrc
